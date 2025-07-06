@@ -1,0 +1,42 @@
+Задание 1.
+
+PS C:\Net_Extend\Typescript\DZ_1_TS> npm init -y
+
+PS C:\Net_Extend\Typescript\DZ_1_TS> npm i -D typescript
+
+PS C:\Net_Extend\Typescript\DZ_1_TS> tsc --init
+
+в файле tsconfig 
+--установил "es5" вместо es2016
+--"module": "system",   
+--"rootDir": "./src" 
+
+создаю папку src, в ней создаю файл app.ts
+
+в файле tsconfig 
+--"outFile": "./dist/app.js",  
+
+в файле package.json делаю скрипт "build": "tsc --project ./tsconfig.json --watch",
+______________________________________________________________
+
+Задание 2.
+
+PS C:\Net_Extend\Typescript\DZ_1_TS> npm i -D eslint
+npm i -D @typescript-eslint/parser
+
+PS C:\Net_Extend\Typescript\DZ_1_TS> npm i -D @typescript-eslint/eslint-plugin
+
+npm init @eslint/config 
+
+в package.json : 
+"eslint": "",
+    "eslint:dump": "eslint --print-config ./.eslint.config.mjs"
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx src"
+
+
+Задание 3.
+rules (беру как будто бы для реакта) вставляю в файл eslint.config.mjs согласно документуции 
+https://eslint.org/docs/latest/use/configure/configuration-files
+
+
+
